@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anmol Gupta — AI/ML Engineer in Training</title>
+<meta name="description" content="Portfolio of Anmol Gupta, B.Tech AI & ML student at DSEU.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Custom cursor node ===== -->
+<div class="cursor-node" id="cursorNode"></div>
+
+<!-- ===== Nav ===== -->
+<nav class="nav" id="nav">
+  <a href="#home" class="nav__brand">
+    <span class="nav__bracket">&lt;</span>AG<span class="nav__bracket">/&gt;</span>
+  </a>
+  <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav__links" id="navLinks">
+    <li><a href="#home"><span class="nav__idx">00</span>Home</a></li>
+    <li><a href="#about"><span class="nav__idx">01</span>About</a></li>
+    <li><a href="#skills"><span class="nav__idx">02</span>Skills</a></li>
+    <li><a href="#work"><span class="nav__idx">03</span>Work</a></li>
+    <li><a href="#gallery"><span class="nav__idx">04</span>Gallery</a></li>
+    <li><a href="#hobbies"><span class="nav__idx">05</span>Hobbies</a></li>
+    <li><a href="#contact"><span class="nav__idx">06</span>Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== Hero / Home ===== -->
+<section class="hero" id="home">
+  <canvas id="netCanvas" class="hero__net"></canvas>
+  <div class="hero__inner">
+    <div class="hero__text fade-up">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>SYSTEM ONLINE — WELCOME</p>
+      <h1 class="hero__title">Hi, I am <span class="grad-text">Anmol Gupta</span></h1>
+      <div class="hero__typewrap">
+        <span class="hero__typestatic">Training a model in&nbsp;</span>
+        <span class="hero__type" id="typeTarget"></span><span class="hero__cursor">|</span>
+      </div>
+      <p class="hero__intro">A passionate B.Tech student exploring the realms of Artificial Intelligence and Machine Learning, building real-world projects, and constantly learning new technologies.</p>
+      <div class="hero__actions">
+        <a href="Anmol_Gupta_Resume.pdf.pdf" download="Anmol_Gupta_Resume" class="btn btn--primary">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          <i class="fa-regular fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
+    </div>
+    <div class="hero__figure fade-up" style="--delay:0.15s">
+      <div class="hero__ring"></div>
+      <div class="hero__photo-wrap">
+        <img src="1000004928.jpg" alt="Anmol Gupta" class="hero__photo">
+      </div>
+      <div class="hero__badge hero__badge--top">AI/ML</div>
+      <div class="hero__badge hero__badge--bottom">DSEU '28</div>
+    </div>
+  </div>
+  <a href="#about" class="scroll-cue" aria-label="Scroll down">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== About ===== -->
+<section class="section" id="about">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>01 — ABOUT</p>
+    <h2 class="section__title">Profile <span class="grad-text">Parameters</span></h2>
+  </div>
+
+  <div class="about__grid">
+    <div class="about__stats fade-up">
+      <div class="stat-card">
+        <i class="fa-regular fa-clock stat-card__icon"></i>
+        <div>
+          <p class="stat-card__label">Age</p>
+          <p class="stat-card__value">20 Years Old</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-location-dot stat-card__icon"></i>
+        <div>
+          <p class="stat-card__label">Current Location</p>
+          <p class="stat-card__value">Shakarpur, Delhi</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <i class="fa-solid fa-house-chimney stat-card__icon"></i>
+        <div>
+          <p class="stat-card__label">Hometown</p>
+          <p class="stat-card__value">Banjariya, Motihari, Bihar — 845401</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline fade-up" style="--delay:0.1s">
+      <p class="timeline__label"><i class="fa-solid fa-graduation-cap"></i> Education Journey</p>
+
+      <div class="timeline__item">
+        <div class="timeline__dot timeline__dot--active"></div>
+        <div class="timeline__content">
+          <p class="timeline__years">2024 — 2028</p>
+          <h3>B.Tech, Artificial Intelligence &amp; Machine Learning</h3>
+          <p class="timeline__place">Delhi Skill and Entrepreneurship University (DSEU)</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <p class="timeline__years">Senior Secondary</p>
+          <h3>11th &amp; 12th Grade</h3>
+          <p class="timeline__place">White Lift Public School, Narela, Delhi</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__content">
+          <p class="timeline__years">High School</p>
+          <h3>10th Grade</h3>
+          <p class="timeline__place">Cambridge International Academy, Motihari, Bihar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills ===== -->
+<section class="section section--alt" id="skills">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>02 — SKILLSET</p>
+    <h2 class="section__title">Trained <span class="grad-text">Weights</span></h2>
+  </div>
+
+  <div class="skills__grid">
+    <div class="skill-group fade-up">
+      <h3 class="skill-group__title"><i class="fa-solid fa-code"></i> Programming Languages</h3>
+      <div class="chip-row">
+        <span class="chip">Python</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+      </div>
+    </div>
+
+    <div class="skill-group fade-up" style="--delay:0.05s">
+      <h3 class="skill-group__title"><i class="fa-solid fa-brain"></i> Core Tech</h3>
+      <div class="chip-row">
+        <span class="chip">AI &amp; ML</span>
+        <span class="chip">NLP</span>
+        <span class="chip">DSA</span>
+        <span class="chip">OOPS</span>
+        <span class="chip">DBMS</span>
+        <span class="chip">Operating Systems</span>
+      </div>
+    </div>
+
+    <div class="skill-group fade-up" style="--delay:0.1s">
+      <h3 class="skill-group__title"><i class="fa-solid fa-wand-magic-sparkles"></i> Tools &amp; Creative</h3>
+      <div class="chip-row">
+        <span class="chip">LaTeX</span>
+        <span class="chip">Blender (3D Animation)</span>
+        <span class="chip">Video &amp; Photo Editing</span>
+      </div>
+    </div>
+
+    <div class="skill-group fade-up" style="--delay:0.15s">
+      <h3 class="skill-group__title"><i class="fa-solid fa-comments"></i> Soft Skills</h3>
+      <div class="chip-row">
+        <span class="chip">Public Speaking</span>
+        <span class="chip">Leadership</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects & Certifications ===== -->
+<section class="section" id="work">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>03 — OUTPUT LAYER</p>
+    <h2 class="section__title">Projects &amp; <span class="grad-text">Certifications</span></h2>
+  </div>
+
+  <div class="work__grid">
+    <article class="work-card work-card--cert fade-up">
+      <div class="work-card__tag"><i class="fa-solid fa-satellite"></i> Certification</div>
+      <h3>AI/ML for Geodata Analysis</h3>
+      <p class="work-card__meta">ISRO (IIRS) &middot; August 2024</p>
+      <p class="work-card__desc">Certified training on applying AI and machine learning techniques to geospatial and satellite data analysis, conducted by the Indian Institute of Remote Sensing.</p>
+    </article>
+
+    <article class="work-card fade-up" style="--delay:0.08s">
+      <div class="work-card__tag"><i class="fa-solid fa-database"></i> Project</div>
+      <h3>Student Record Management System</h3>
+      <p class="work-card__meta">DBMS</p>
+      <p class="work-card__desc">Designed a relational database structure to efficiently manage and track student records.</p>
+    </article>
+
+    <article class="work-card fade-up" style="--delay:0.16s">
+      <div class="work-card__tag"><i class="fa-solid fa-file-lines"></i> Research</div>
+      <h3>The Psychology of Social Media Addiction</h3>
+      <p class="work-card__meta">LaTeX Research Synopsis</p>
+      <p class="work-card__desc">A detailed research synopsis utilizing LaTeX exploring behavioral patterns behind social media addiction.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ===== Gallery ===== -->
+<section class="section section--alt" id="gallery">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>04 — VISUAL LOGS</p>
+    <h2 class="section__title">Photo <span class="grad-text">Gallery</span></h2>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery__item fade-up">
+      <img src="1000010355.jpg" alt="Gallery photo 1" loading="lazy">
+    </div>
+    <div class="gallery__item gallery__item--tall fade-up" style="--delay:0.08s">
+      <img src="1000004928.jpg" alt="Gallery photo 2" loading="lazy">
+    </div>
+    <div class="gallery__item fade-up" style="--delay:0.16s">
+      <img src="1000004926.jpg" alt="Gallery photo 3" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hobbies ===== -->
+<section class="section" id="hobbies">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>05 — IDLE PROCESSES</p>
+    <h2 class="section__title">Hobbies &amp; <span class="grad-text">Interests</span></h2>
+  </div>
+
+  <div class="hobbies__grid">
+    <div class="hobby-card fade-up">
+      <i class="fa-solid fa-baseball-bat-ball hobby-card__icon"></i>
+      <h3>Outdoor</h3>
+      <div class="chip-row">
+        <span class="chip">Cricket</span>
+        <span class="chip">Kabaddi</span>
+      </div>
+    </div>
+    <div class="hobby-card fade-up" style="--delay:0.1s">
+      <i class="fa-solid fa-chess-knight hobby-card__icon"></i>
+      <h3>Indoor</h3>
+      <div class="chip-row">
+        <span class="chip">Chess</span>
+        <span class="chip">Carrom</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="section section--alt" id="contact">
+  <div class="section__head fade-up">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>06 — CONNECT</p>
+    <h2 class="section__title">Let's <span class="grad-text">Collaborate</span></h2>
+  </div>
+
+  <div class="contact__grid">
+    <div class="contact__info fade-up">
+      <a href="tel:+919199136107" class="contact__row">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91-9199136107</span>
+      </a>
+      <a href="mailto:anmol.aiml25@gmail.com" class="contact__row">
+        <i class="fa-solid fa-envelope"></i>
+        <span>anmol.aiml25@gmail.com</span>
+      </a>
+
+      <div class="contact__socials">
+        <a href="https://www.facebook.com/share/1BaewKFim2/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/anmol-gupta-615953322?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.instagram.com/a_gupta_1207?igsh=MWJybGN6Nm1lNmhmaA==" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact__form fade-up" style="--delay:0.1s" id="contactForm">
+      <div class="form-row">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-row">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" rows="5" placeholder="Say hello..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--block">
+        <i class="fa-solid fa-paper-plane"></i> Send Message
+      </button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Anmol Gupta — Built with curiosity, caffeine &amp; a bit of gradient descent.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
